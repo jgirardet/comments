@@ -1,4 +1,4 @@
-import {mutations} from '@/store/store'
+import {mutations} from '@/store/store.coffee'
 
 describe 'mutations', ->
 

@@ -14,21 +14,9 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
     reporters: ['spec', 'coverage'],
-    files: ['./index.js', '**/*.coffee'],
+    files: ['./index.js'],
     preprocessors: {
       './index.js': ['webpack', 'sourcemap'],
-      '**/*.coffee': ['coffee']
-    },
-    coffeePreprocessor: {
-      // options passed to the coffee compiler
-      options: {
-        bare: true,
-        sourceMap: false
-      },
-      // transforming the filenames
-      transformPath: function(path) {
-        return path.replace(/\.coffee$/, '.js')
-      }
     },
     webpack: webpackConfig,
     webpackMiddleware: {

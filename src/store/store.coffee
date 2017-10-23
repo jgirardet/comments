@@ -11,4 +11,4 @@ export mutations =
     state.comments.push(comment)
 
 
-export default new Vuex.Store({state, mutations})
+# export default Vuex.Store({state, mutations})

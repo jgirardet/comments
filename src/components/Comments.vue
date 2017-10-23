@@ -9,8 +9,8 @@
 import axios from 'axios'
 import Comment from './comments/Comment'
 import commentForm from './comments/CommentForm'
-import HelloWorld from '@/store/HelloWorld'
-import store from '@/store/store'
+# import HelloWorld from '@/store/HelloWorld'
+# import store from '@/store/store'
 
 
 export default {
